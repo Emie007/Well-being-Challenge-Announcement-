@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Well-being Challenge Winners</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .link-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            max-width: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .link-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
+            background-size: 400% 400%;
+            border-radius: 22px;
+            z-index: -1;
+            animation: gradient-border 3s ease infinite;
+        }
+        
+        @keyframes gradient-border {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        
+        .announcement-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .announcement-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+        
+        .emoji {
+            font-size: 24px;
+            margin: 0 8px;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-8px); }
+            60% { transform: translateY(-4px); }
+        }
+        
+        .preview-text {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+    <div class="link-card">
+        <div class="title">
+            <span class="emoji">🎉</span>
+            Staff Well-being Challenge
+            <span class="emoji">🏆</span>
+        </div>
+        <div class="subtitle">
+            The moment you've all been waiting for... our winners have finally been announced!
+        </div>
+        
+        <a href="#" class="announcement-link" onclick="openAnnouncement()">
+            🎊 Click here to view the full announcement 🎊
+        </a>
+        
+        <div class="preview-text">
+            Interactive • Animated • Full of surprises!
+        </div>
+    </div>
+
+    <script>
+        function openAnnouncement() {
+            // You'll replace this with the actual URL where your announcement is hosted
+            alert("Replace this with the actual URL to your hosted announcement!\n\nFor example:\nwindow.open('https://your-site.com/announcement.html', '_blank');");
+            
+            // Uncomment and modify this line when you have the URL:
+            // window.open('YOUR_ANNOUNCEMENT_URL_HERE', '_blank');
+        }
+    </script>
+</body>
+</html>
